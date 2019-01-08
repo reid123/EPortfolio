@@ -1,0 +1,59 @@
+body {
+	background-color: #D3D3D3;
+}
+
+#container {
+	width: 1200px;
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: .9em;
+}
+
+#banner {
+	padding: 5px;
+	background-color: rgb(213, 219, 225);
+	font-size: 1.1em;
+}
+
+#content {
+	padding: 10px 10px 10px 170px; /* TRBL; this keeps the text from flowing around the sidebar */ 
+	margin-left: 0px;
+	background-color: rgb(235, 235, 235);}
+
+#sidebar {
+	float: left;
+	width: 150px;
+	margin: 0px;
+	padding: 5px;
+	background-color: gray;
+	font-size: .9em;
+}
+
+#sidebar a {
+	display: block; /* this makes the link look like a block element - we could give it margins, etc. */
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: gray;
+	margin: 0px;
+	padding: 5px;
+	width: 140px;
+}
+
+#sidebar a:hover {
+	background-color: #6699FF;
+}
+
+#urhere a, #urhere a:hover {
+	background-color: #990033;
+}
+
+#footer {
+	clear: both;
+	padding: 5px;
+	background-color: rgb(213, 219, 225);
+	font-size: .7em;
+	text-align: center;
+}

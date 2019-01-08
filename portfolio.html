@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: "Comic Sans MS", cursive, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  height: 1300px;
+  width: 1800px;
+  background-color:#D3D3D3;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+h1, p{
+	margin:10px;
+}
+.about{
+	background-image:url("contact.jpg");
+	 height:80px;
+  
+  position: relative;
+}
+.about h1{
+	color:white;
+}
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+<h1 align="center">Rahaf Eid</h1>
+
+  <div class="container">
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="portfolio.html">Portfolio</a>
+    </div>
+     <div class="about">
+    	<div class="center">
+    		<h1 align="center">Portfolio</h1>
+    	</div>
+    </div>
+    <h1 align="center"><strong>Ready to see my projects!</strong></h1>
+			
+			<p>I have created a Website for a resort that I called Ryana. The Website will let you browse to check rooms' options, prices, and avilabilities. </p>
+			
+			<a href="https://toshibausermanual.000webhostapp.com/Ryana/index.html">Ryana Resort</a>
+			
+			<div class="w3-content w3-display-container">
+  <img class="mySlide" src="1.PNG" style="width:40%">
+  <img class="mySlide" src="11.PNG" style="width:40%">
+  <img class="mySlide" src="12.PNG" style="width:40%">
+  <img class="mySlide" src="13.PNG" style="width:40%">
+<img class="mySlide" src="14.PNG" style="width:40%">
+  <button class="w3-button w3-black w3-display-left" onclick="plus(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plus(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+show(slideIndex);
+
+function plus(n) {
+  show(slideIndex += n);
+}
+
+function show(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlide");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+			
+			
+			
+			<p >As part of my final course at school, I worked with other studends to create a Website for a vintage Auto parts business. I have worked on desiging and coding 
+				the front-end of the webiste.
+				 </p>
+			<a href="https://lugnutsvintageautoparts.herokuapp.com/">Lugnut's Vintage Auto Parts</a>
+						<div class="w3-content w3-display-container">
+  <img class="Slides" src="Capture.PNG" style="width:40%">
+  <img class="Slides" src="Capture1.PNG" style="width:40%">
+  <img class="Slides" src="Capture2.PNG" style="width:40%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("Slides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+			
+  </div>
+			
+</body>
+</html>
